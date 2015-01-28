@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>BlankCordovaApp1</title>
+
+    <!-- BlankCordovaApp1 references -->
+    <link href="css/index.css" rel="stylesheet" />
+</head>
+<body>
+    <p>Hello, your application is ready!</p>
+
+    Data: <div id="data"> Bla </div>
+    Show: <div id="show"> Bla </div>
+    Username: <div id="user"> Not Authorized </div>
+    Request Token : <div id="req_tok"> none </div>
+    Consumer Key: <div id="con_key"> none </div>
+    Acces Token: <div id="acc_tok"> none </div>
+
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+
+    <script src="scripts/jquery/jquery-2.1.3.min.js"></script>
+    <script src="scripts/jquery/jquery.mobile-1.4.5.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/pocket/login.js"></script>
+    <script type="text/javascript">
+//    function auth_event(event) {
+//        pocket_authenticate(event.data.platform);
+        //    }
+        pocket_authenticate("web");
+    </script>
+
+
+</body>
+</html>
